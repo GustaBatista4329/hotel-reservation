@@ -18,9 +18,15 @@ public class ReserveService {
         return convertData(reserveRepository.findAll());
     }
 
+    public List<ReserveDto> showAllUserReserves(String cpf) {
+        return convertData(reserveRepository.findByUserCpf(cpf));
+    }
+
     private List<ReserveDto> convertData(List<Reserve> reserves){
         return reserves.stream()
                 .map(r -> new ReserveDto(r.getUsuario().getName(), r.getUsuario().getCpf(), r.getRoom().getNumber(), r.getEntryDate(), r.getDepartureDate()))
                 .collect(Collectors.toList());
     }
+
+
 }
