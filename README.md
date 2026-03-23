@@ -136,9 +136,3 @@ Contribuições são bem-vindas! Siga os passos:
 **Gustavo Batista**
 
 [![GitHub](https://img.shields.io/badge/GitHub-GustaBatista4329-181717?style=flat&logo=github)](https://github.com/GustaBatista4329)
-
----
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
