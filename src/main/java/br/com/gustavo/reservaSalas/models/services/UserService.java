@@ -18,9 +18,10 @@ public class UserService {
         return converData(userRepository.findAll());
     }
 
+
     private List<UserDto> converData(List<User> users){
         return users.stream()
-                .map(u -> new UserDto(u.getName(), u.getAge(), u.getEmail(), u.getPhone()))
+                .map(u -> new UserDto(u.getName(), u.getAge(), u.getEmail(), u.getPhone(), u.getReserves()))
                 .collect(Collectors.toList());
     }
 }

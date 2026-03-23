@@ -14,12 +14,6 @@ import org.springframework.scheduling.annotation.Scheduled;
 @SpringBootApplication
 @EnableScheduling
 public class RoomReserveApplication{
-    @Autowired
-    UserRepository userRepository;
-    @Autowired
-    RoomRepository roomRepository;
-    @Autowired
-    ReserveRepository reserveRepository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(RoomReserveApplication.class, args);
